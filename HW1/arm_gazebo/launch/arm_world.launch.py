@@ -26,11 +26,10 @@ import os
 
 
 def generate_launch_description():
-    # Declare arguments
     declared_arguments = []
    
 
-    #path
+    
     link_description_path = get_package_share_directory('arm_description')
 
     desc_path = os.path.join(link_description_path, "urdf", "arm.urdf")

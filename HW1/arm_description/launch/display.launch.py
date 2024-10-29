@@ -18,7 +18,7 @@ def generate_launch_description():
  
     declared_arguments.append(
         DeclareLaunchArgument(
-            "rviz_config_file", #this will be the name of the argument  
+            "rviz_config_file",  
             default_value=PathJoinSubstitution(
                 [FindPackageShare("arm_description"), "config", "rviz", "arm.rviz"]
             ),
@@ -46,7 +46,7 @@ def generate_launch_description():
     )  
 
     robot_state_publisher_node_links = Node(
-        package="robot_state_publisher", #ros2 run robot_state_publisher robot_state_publisher
+        package="robot_state_publisher", 
         executable="robot_state_publisher",
         output="both",
         parameters=[r_d_x,
